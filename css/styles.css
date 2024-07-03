@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
+    background-color: #336699;
+}
+
+.iphone{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 640px;
+    background-color: rgb(182, 181, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 5px 5px 50px #0f0b39;
+}
+
+.screen{
+    position: relative;
+    background-color: #000;
+    width: 340px;
+    height: 630px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    color: #fff;
+    width: 90%;
+    top: 20px;
+}
+
+.bar{
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 5px;
+    border-radius: 2px;
+    bottom: 10px;
+}
+
+.calculator{
+    width: 280px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calculator span{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.2em;
+    background-color: #303134;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.calculator span:hover{
+    cursor: pointer;
+}
+
+.calculator .operations{
+    background-color: #ff9f0a;
+}
+
+.calculator .clear{
+    background-color: #a5a5a5;
+    color: #000;
+    display: grid;
+    grid-column: 1 / 3;
+    width: 130px;
+    border-radius: 60px;
+}
+
+.calculator .b{
+    background-color: #a5a5a5;
+    color: #000;
+    border-radius: 60px;
+}
+
+.calculator .zero{
+    display: grid;
+    grid-column: span 2;
+    width: 130px;
+    border-radius: 60px;
+}
+
+
+.calculator .inputArea{
+    grid-column: span 4;
+    padding: 20px 10px;
+    outline: none;
+    border: none;
+    background-color: #000;
+    font-size: 2em;
+    color: #fff;
+    text-align: right;
+}
+
+.history{
+    /* position: absolute; */
+    width: 350px;
+    height: 640px;
+    border-radius: 10px;
+    background-color: #ffffff4f;
+    padding: 30px;
+    overflow-y: scroll;
+    font-size: 1.1em;
+    box-shadow: 5px 5px 50px #0f0b39;
+}
+
+.history::-webkit-scrollbar{
+    width: 0;
+}
+
+.history h1{
+    padding: 10px 0;
+}
+
+.history p{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #303134;
+}
+
+.made{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #fff;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="iphone">
+        <div class="screen">
+            <div class="status">
+                <h5>10:24</h5>
+                <h5>Claro AR</h5>
+            </div>
+            <form action="" class="calculator" name="calc">
+                <input type="text" name="txt" class="inputArea">
+                <span class="clear" onclick="document.calc.txt.value = ``;">AC</span>
+                <span class="b" onclick="document.calc.txt.value = backspace(document.calc.txt.value);">B</span>
+                <span class="operations" onclick="document.calc.txt.value += `/`;">/</span>
+                <span onclick="document.calc.txt.value += `7`;">7</span>
+                <span onclick="document.calc.txt.value += `8`;">8</span>
+                <span onclick="document.calc.txt.value += `9`;">9</span>
+                <span class="operations" onclick="document.calc.txt.value += `*`;">*</span>
+                <span onclick="document.calc.txt.value += `4`;">4</span>
+                <span onclick="document.calc.txt.value += `5`;">5</span>
+                <span onclick="document.calc.txt.value += `6`;">6</span>
+                <span class="operations" onclick="document.calc.txt.value += `-`;">-</span>
+                <span onclick="document.calc.txt.value += `1`;">1</span>
+                <span onclick="document.calc.txt.value += `2`;">2</span>
+                <span onclick="document.calc.txt.value += `3`;">3</span>
+                <span class="operations plus" onclick="document.calc.txt.value += `+`;">+</span>
+                <span class="zero" onclick="document.calc.txt.value += `0`;">0</span>
+                <span onclick="document.calc.txt.value += `.`;">,</span>
+                <span class="operations" onclick="document.calc.txt.value = calculation(document.calc.txt.value);">=</span>
+            </form>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="history" id="history">
+        <h1>History</h1>
+        <p></p>
+    </div>
+
+    <div class="made"><h5>Made By Leandro Rojano</h5></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
